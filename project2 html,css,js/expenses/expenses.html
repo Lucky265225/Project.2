@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BENIFIT IN LIFE</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <ul>
+            <a href="/home/home.html"><li>HOME</li></a>
+            <a href="/health/health.html"><li>HEALTH</li></a>
+            <a href="/expenses/expenses.html"><li>EXPENSES</li></a>
+            <a href="/science/science.html"><li>SCIENCE</li></a>
+            <a href="/education/education.html"><li>EDUCATION</li></a>
+        </ul>
+    </div>
+
+    <h1>โปรแกรมคำนวณค่าใช้จ่ายในชีวิตประจำวัน</h1>
+    
+    <div class="content">
+        <label>กรอกจำนวนวันที่คุณต้องการเก็บเงิน :</label>
+        <input type="text" id="day"> วัน
+        <br><br>
+        <label>กรอกจำนวนเงินที่คุณต้องการเก็บต่อวัน :</label>
+        <input type="text" id="collect"> บาท
+        <br><br>
+        <label>กรอกค่าใช้จ่ายที่คุณต้องการใช้ :</label>
+        <input type="text" id="use"> บาท
+        <br><br>
+        <button onclick="calculate()">คำนวณเลย!</button>
+    </div>
+
+    <div class="display">
+        <h4>เงินสะสมของคุณ :</h4>
+        <p id="collectMoney"></p>
+        <h4>ผลต่างของเงินที่เก็บกับเงินที่จะใช้จ่าย :</h4>
+        <p id="differentMoney"></p>
+        <h2 id="money"></h2>
+    </div>
+
+
+
+
+
+
+    <script src="expenses.js"></script>
+
+</body>
+</html>

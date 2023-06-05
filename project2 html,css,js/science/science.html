@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BENIFIT IN LIFE</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    
+    <div class="navbar">
+        <ul>
+            <a href="/home/home.html"><li>HOME</li></a>
+            <a href="/health/health.html"><li>HEALTH</li></a>
+            <a href="/expenses/expenses.html"><li>EXPENSES</li></a>
+            <a href="/science/science.html"><li>SCIENCE</li></a>
+            <a href="/education/education.html"><li>EDUCATION</li></a>
+        </ul>
+    </div>
+
+    <h1>โปรแกรมคำนวณอุณหถูมิ</h1>
+    
+    <div class="content">
+        <input type="text" id="inputValue">
+        <button onclick="toCelsiusProgram(document.getElementById('inputValue').value)">แปลงเป็น celsius</button>
+        <button onclick="toFahrenheitProgram(document.getElementById('inputValue').value)">แปลงเป็น fahrenheit</button>
+    </div>
+
+    <div class="display">
+        <h1 id="lol"></h1>
+    </div>
+
+
+    <script src="science.js"></script>
+
+    
+</body>
+</html>

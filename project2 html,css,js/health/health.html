@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BENIFIT IN LIFE</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <ul>
+            <a href="/home/home.html"><li>HOME</li></a>
+            <a href="/health/health.html"><li>HEALTH</li></a>
+            <a href="/expenses/expenses.html"><li>EXPENSES</li></a>
+            <a href="/science/science.html"><li>SCIENCE</li></a>
+            <a href="/education/education.html"><li>EDUCATION</li></a>
+        </ul>
+    </div>
+    
+    <h1>โปรแกรมคำนวณค่า BMI</h1>
+
+    <div class="content">
+        <label>ส่วนสูง : </label>
+        <input type="text" id="toHeight"> ซม.
+        <br><br>
+        <label>น้ำหนัก : </label>
+        <input type="text" id="toWeight"> กก.
+        <br><br>
+        <button onclick="bmi()">คำนวณ BMI</button>
+    </div>
+
+    <div class="display">
+        <h2 id="answerBmi"></h2>
+        <h4 id="describe"></h4>
+    </div>
+
+    <br><br>
+
+    <div class="article">
+        <table>
+            <tr>
+                <th>ค่าBMI</th>
+                <th>ลักษณะร่างกาย</th>
+            </tr>
+            <tr>
+                <td>น้อยกว่า 18.5</td>
+                <td>ผอมเกินไป</td>
+            </tr>
+            <tr>
+                <td>18.5-25.0</td>
+                <td>ปกติ</td>
+            </tr>
+            <tr>
+                <td>25.0-30.0</td>
+                <td>เริ่มอ้วน</td>
+            </tr>
+            <tr>
+                <td>30.0-35.0</td>
+                <td>อ้วน</td>
+            </tr>
+            <tr>
+                <td>มากกว่า 35.0</td>
+                <td>อ้วนเกินไป</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="health.js"></script>
+
+</body>
+</html>
